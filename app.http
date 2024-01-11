@@ -1,0 +1,63 @@
+post http://localhost:4000/register
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+###
+POST http://localhost:4000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+GET http://localhost:4000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+
+###
+GET http://localhost:4000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+
+###
+GET http://localhost:4000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+
+###
+GET http://localhost:4000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+###
+GET http://localhost:4000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+###
+GET http://localhost:4000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+
+###
+DELETE http://localhost:4000/tweets/8/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+
+###
+POST http://localhost:4000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+###
+GET http://localhost:4000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0OTE2MTA2fQ.1keD1CzZU5pBtQWNKBvS5INVfBWO-dslcjGEFI4-WG0
+
+###
+
+
+
+
+
+
+
